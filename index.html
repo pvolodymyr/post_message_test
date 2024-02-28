@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PostMessage Parent Page</title>
+		<title>Iframe test</title>
 	</head>
 	<body>
 		<h2>QA</h2>
 		<iframe
 			id="iframe-qa"
-			src="https://dev.chaizfixd.pages.dev/?planId=4868602"
+			src="https://dev.chaizfixd.pages.dev/?planId=4868602&accessToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJGaXhkIiwicm9sZSI6IlBhcnRuZXIiLCJ1bmlxdWVfbmFtZSI6IkZpeGQiLCJwYXJ0bmVyIjoyLCJuYmYiOjE3MDczODk2MjEsImV4cCI6MjAyMjc0OTYyMSwiaWF0IjoxNzA3Mzg5NjIxLCJpc3MiOiJJc3N1ZXIiLCJhdWQiOiJBdWRpZW5jZSJ9.Es1cx4UaHQeZKNTN72o3aG1Yec_hbsbGVQZQznU11sq-kTX4pmqLmNG01xW8X7gsS5ra9jItqCTvjdGdwX-zow"
 			width="360"
 			height="350"
 			frameborder="0"
 		></iframe>
-		<script>
-			const iframeQA = document.getElementById('iframe-qa');
-
-			iframeQA.addEventListener('load', function () {
-				const accessToken =
-					'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJGaXhkIiwicm9sZSI6IlBhcnRuZXIiLCJ1bmlxdWVfbmFtZSI6IkZpeGQiLCJwYXJ0bmVyIjoyLCJuYmYiOjE3MDczODk2MjEsImV4cCI6MjAyMjc0OTYyMSwiaWF0IjoxNzA3Mzg5NjIxLCJpc3MiOiJJc3N1ZXIiLCJhdWQiOiJBdWRpZW5jZSJ9.Es1cx4UaHQeZKNTN72o3aG1Yec_hbsbGVQZQznU11sq-kTX4pmqLmNG01xW8X7gsS5ra9jItqCTvjdGdwX-zow';
-
-				iframeQA.contentWindow.postMessage({ accessToken });
-			});
-		</script>
 	</body>
 </html>
